@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accessibility</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        header {
+            height: 75px;
+        }
+         .card:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-black text-white py-4 text-center">
+        <h1>Web Accessibility</h1>
+    </header>
+    
+    <!-- Cards -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/WAI.jpg" class="card-img-top" alt="WAI Initiative - Web Accessibility">
+                    <div class=" card-body">
+                        <h5 class="card-title">WAI Initiative</h5>
+                        <div class="card-text">
+                            <div class="accordion" id="accordion1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            View summary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">
+                                            The Web Accessibility Initiative (WAI) is an effort by the World Wide Web
+                                            Consortium
+                                            (W3C) to make the web accessible to people with disabilities. It provides
+                                            guidelines,
+                                            resources, and techniques for improving web accessibility.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/4.jpg" class="card-img-top" alt="Four Tenets of Web Accessibility">
+                    <div class="card-body">
+                        <h5 class="card-title">Four Tenets of Web Accessibility</h5>
+                        <div class="card-text">
+                            <div class="accordion" id="accordion2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            View summary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                                        <div class="accordion-body">
+                                            The Web Content Accessibility Guidelines (WCAG) outline four principles that
+                                            form the foundation of web accessibility: <br> <br>
+
+                                            <strong>Perceivable</strong>: Information and user interface components must
+                                            be presentable
+                                            to users in ways they can perceive.<br> <br>
+
+                                            <strong>Operable</strong>: User interface components and navigation must be
+                                            operable.<br> <br>
+
+                                            <strong>Understandable</strong>: Information and operation of the user
+                                            interface must be
+                                            understandable.<br> <br>
+
+                                            <strong>Robust</strong>: Content must be robust enough that it can be
+                                            interpreted reliably by
+                                            a wide variety of user agents, including assistive technologies.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/over.png" class="card-img-top"
+                        alt="WCAG-EM Overview - Web Content Accessibility Guidelines Evaluation Methodology">
+                    <div class="card-body">
+                        <h5 class="card-title">WCAG-EM Overview</h5>
+                        <div class="card-text">
+                            <div class="accordion" id="accordion3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
+                                            View Summary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">
+                                            The WCAG Evaluation Methodology (WCAG-EM) provides a framework for
+                                            evaluating the accessibility of web content. It includes steps for planning
+                                            the evaluation, selecting representative samples, and conducting evaluations
+                                            using a variety of techniques, including automated tools and manual testing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Second row of Cards-->
+        <div class="row">
+            <!-- Fourth Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/tag.png" class="card-img-top"
+                        alt="Importance of Semantic Tags in Web Accessibility">
+                    <div class=" card-body">
+                        <h5 class="card-title">Importance of Semantic Tags</h5>
+                        <div class="card-text">
+                            <div class="accordion" id="accordion4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            View Summary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordion4">
+                                        <div class="accordion-body">
+                                            Semantic HTML elements provide meaning to the content they enclose, which is
+                                            essential for accessibility. Screen readers and other assistive technologies
+                                            rely on semantic markup to properly interpret and present content to users
+                                            with disabilities. Using semantic tags like header, nav, main,
+                                            footer, etc., helps to structure content in a meaningful way.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/aria.png" class="card-img-top"
+                        alt="ARIA (Accessible Rich Internet Applications) - Web Accessibility">
+                    <div class="card-body">
+                        <h5 class="card-title">ARIA (Accessible Rich Internet Applications)</h5>
+                        <div class="card-text">
+                            <div class="accordion" id="accordion5">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="true"
+                                            aria-controls="collapseFive">
+                                            View Summary
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordion5">
+                                        <div class="accordion-body">
+                                            ARIA is a set of attributes that can be added to HTML elements to improve
+                                            accessibility for users of assistive technologies. It provides additional
+                                            information about the role, state, and properties of elements, making it
+                                            easier for assistive technologies to interpret dynamic content, such as
+                                            widgets, menus, and live regions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Toast-->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+                <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-bs-autohide="false">
+                    <div class="toast-header">
+                        <strong class="me-auto">Hello User</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        This page summarize the key concepts in web accessibility.
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div style="height: 500px;"></div>
+
+            <footer class="text-center text-white" style="background-color: black">
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2024 Copyright: Ngun
+                </div>
+            </footer>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toastEl = document.getElementById('toast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        });
+    </script>
+</body>
+
+</html>
